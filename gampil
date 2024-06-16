@@ -1,0 +1,12 @@
+<?php
+
+require_once 'vendor/autoload.php';
+
+use Gampil\Utils\CLI\CommandLineTool;
+use Gampil\App\Container;
+
+if(php_sapi_name() !== 'cli') exit('CLI ONLY');
+
+Container::load_config(require_once __DIR__.'/app/config.php');
+$shell = new CommandLineTool;
+$shell->run($argv);

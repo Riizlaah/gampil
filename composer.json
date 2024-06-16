@@ -1,0 +1,34 @@
+{
+    "name": "gampil/gampil",
+    "description": "Sebuah Framework dengan struktur MVC yang sederhana dan ringan",
+    "type": "project",
+    "license": "MIT",
+    "readme": "README.md",
+    "keyword": ["gampil", "framework", "mvc"],
+    "authors": [
+        {
+            "name": "Naf'an Rizkilah"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+      "php": "^8.0",
+      "gampil/gampil-core": "^1.0"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "models\\": "app/models/"
+        }
+    },
+    "scripts" : {
+      "post-create-project-cmd" : [
+        "php -r \"if(!file_exists('app/database.sqlite')) touch('app/database.sqlite');\""
+      ]
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23"
+    }
+}
