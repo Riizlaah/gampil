@@ -60,4 +60,4 @@ $user1->profile->bio;# relationship juga didukung :)
 
 ```
 
-selengkapnya di [Dokumentasi](https://)
+Dokumentasi belum dipersiapkan, saya mohon maaf sebesar-besarnya
